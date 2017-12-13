@@ -6,6 +6,7 @@ var repoFactory = function() {
                     console.log('Retrieving from cache');
                     return this.taskRepo;
                 } else {
+                    console.log('initializing cache')
                     this.taskRepo = require('./taskRepository');
 
                     // config might go here
